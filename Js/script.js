@@ -47,9 +47,7 @@ function navToggle () {
 function hideMenu () {
     btn.classList.toggle('open');
     menu.classList.add('hidden');
-    if(menu.classList.contains('flex')) {
-        logo.setAttribute('src', './images/logo-bookmark-footer.svg')
-       } else {
+    if(menu.classList.contains('hidden')) {
         logo.setAttribute('src', './images/logo-bookmark.svg')
        }
 }
