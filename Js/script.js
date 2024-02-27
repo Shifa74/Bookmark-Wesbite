@@ -44,10 +44,9 @@ function navToggle () {
 
 }
 
-function hideMenu () {
-    btn.classList.toggle('open');
-    menu.classList.add('hidden');
-    if(menu.classList.contains('hidden')) {
-        logo.setAttribute('src', './images/logo-bookmark.svg')
-       }
+function hideMenu () { 
+        btn.classList.remove('open');
+        menu.classList.remove('flex');
+        menu.classList.add('hidden');
+        logo.setAttribute('src', './images/logo-bookmark.svg');  
 }
